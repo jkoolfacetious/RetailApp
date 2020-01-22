@@ -1,9 +1,10 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Microsoft.AspNet.Identity;
 
 namespace SuyaDataManager.Controllers
 {
@@ -13,7 +14,9 @@ namespace SuyaDataManager.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            //get user ID
+            string userID = RequestContext.Principal.Identity.GetUserId();
+            return new string[] { "value1", "value2", userID };
         }
 
         // GET api/values/5

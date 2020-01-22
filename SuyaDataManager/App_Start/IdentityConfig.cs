@@ -22,14 +22,17 @@ namespace SuyaDataManager
             // Configure validation logic for usernames
             manager.UserValidator = new UserValidator<ApplicationUser>(manager)
             {
+                //Can use any characters for username
                 AllowOnlyAlphanumericUserNames = false,
+                //Can't have more than one account
                 RequireUniqueEmail = true
             };
             // Configure validation logic for passwords
             manager.PasswordValidator = new PasswordValidator
             {
-                RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
+                RequiredLength = 4,
+                //need special character
+                RequireNonLetterOrDigit = false,
                 RequireDigit = true,
                 RequireLowercase = true,
                 RequireUppercase = true,
