@@ -2,6 +2,7 @@ using System.Web.Http;
 using WebActivatorEx;
 using SuyaDataManager;
 using Swashbuckle.Application;
+using SuyaDataManager.App_Start;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -16,6 +17,13 @@ namespace SuyaDataManager
             GlobalConfiguration.Configuration
                 .EnableSwagger(c =>
                     {
+
+                        //adds token to every end point
+                        c.DocumentFilter<AuthTokenOp>();
+                        //add parameter for every method
+                        c.OperationFilter<AuthorizationOperationFilter>();
+
+
                         // By default, the service root url is inferred from the request used to access the docs.
                         // However, there may be situations (e.g. proxy and load-balanced environments) where this does not
                         // resolve correctly. You can workaround this by providing your own code to determine the root URL.
