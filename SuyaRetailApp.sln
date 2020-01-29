@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuyaDataManager", "SuyaData
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DatabaseDealership", "DatabaseDealership\DatabaseDealership.sqlproj", "{0A575F88-A7C6-461C-9A82-32808A5876E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCIADesktopUI", "FCIAUserInterFace\FCIADesktopUI.csproj", "{F50524CD-FA69-4BAF-BBF9-6543FAE7494F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{0A575F88-A7C6-461C-9A82-32808A5876E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A575F88-A7C6-461C-9A82-32808A5876E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0A575F88-A7C6-461C-9A82-32808A5876E3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F50524CD-FA69-4BAF-BBF9-6543FAE7494F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F50524CD-FA69-4BAF-BBF9-6543FAE7494F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F50524CD-FA69-4BAF-BBF9-6543FAE7494F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F50524CD-FA69-4BAF-BBF9-6543FAE7494F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
