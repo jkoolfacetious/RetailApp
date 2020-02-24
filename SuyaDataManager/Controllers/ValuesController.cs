@@ -15,8 +15,8 @@ namespace SuyaDataManager.Controllers
         public IEnumerable<string> Get()
         {
             //get user ID
-            string userID = RequestContext.Principal.Identity.GetUserId();
-            return new string[] { "value1", "value2", userID };
+            string userId = RequestContext.Principal.Identity.GetUserId();
+            return new string[] { "value1", "value2", userId };
         }
 
         // GET api/values/5
